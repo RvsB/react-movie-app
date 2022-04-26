@@ -1,0 +1,13 @@
+import MovieCard from "../MovieCard/MovieCard";
+
+function ListAllMovies({ movies }) {
+  return (
+    <div className="movie__list">
+      <h1>All Movies</h1>
+      {movies.map((movie) => (
+        <MovieCard movie={movie} />
+      ))}
+    </div>
+  );
+}
+export default ListAllMovies;

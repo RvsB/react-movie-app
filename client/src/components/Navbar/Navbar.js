@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 function Navbar() {
@@ -8,12 +9,12 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__links">
-        <a className="navbar__links-item" href="#">
+        <Link className="navbar__links-item" to="/movielist">
           Movies
-        </a>
-        <a className="navbar__links-item" href="#">
+        </Link>
+        <Link className="navbar__links-item" to="/genres">
           Genres
-        </a>
+        </Link>
       </div>
     </nav>
   );
