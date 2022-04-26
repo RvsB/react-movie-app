@@ -19,12 +19,14 @@ $black-secondary: #080808;
 
   &__icon {
     color: #e52213;
-    font-size: 2rem;
+    font-size: 2rem !important;
     margin-right: 1rem;
   }
 
   &__title {
     color: #e52213;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
   }
 
   &__right {

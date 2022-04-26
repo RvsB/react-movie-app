@@ -1,0 +1,15 @@
+.home {
+  margin: 3rem;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  //   background-color: red;
+
+  &__content {
+    color: #831010;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 6rem;
+    font-weight: 300;
+  }
+}

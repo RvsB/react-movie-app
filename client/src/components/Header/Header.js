@@ -38,7 +38,7 @@ function Header() {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
-            <Avatar className="header__icon">RB</Avatar>
+            <Avatar>RB</Avatar>
           </IconButton>
 
           <Menu

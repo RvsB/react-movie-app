@@ -1,0 +1,40 @@
+$black-primary: #141414;
+$black-secondary: #080808;
+
+.navbar {
+  //   background-image: linear-gradient(to top, $black-primary, $black-secondary);
+  height: 8vw;
+  background-color: white;
+  display: flex;
+
+  &__links {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    &-item:link,
+    &-item:visited {
+      flex: 1;
+      border: 1px solid $black-secondary;
+      // border-bottom: 1px solid $black-secondary;
+      text-decoration: none;
+      color: #831010;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      background-color: $black-primary;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.7s;
+    }
+
+    &-item:hover,
+    &-item:active {
+      color: white;
+      background-color: $black-secondary;
+    }
+  }
+}
