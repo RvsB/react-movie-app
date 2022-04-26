@@ -1,0 +1,33 @@
+$black-primary: #141414;
+$black-secondary: #080808;
+
+.header {
+  padding: 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    $black-secondary,
+    $black-primary
+  );
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &__icon {
+    color: #e52213;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  &__title {
+    color: #e52213;
+  }
+
+  &__right {
+    padding: 1rem;
+  }
+}

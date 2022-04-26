@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+$text-color: #fefefe;
+$black-primary: #141414;
+$black-secondary: #080808;
+$red-primary: #e52213;
+
+/* A CSS reset. It is used to make sure that all browsers render the elements in the same way. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  // padding: 2rem;
+  background-color: $black-primary;
+}
