@@ -1,6 +1,12 @@
 .movie__list {
+  margin-top: 3rem;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(25rem, 1fr)
+  ); //makes the cards responsive to width of the page
+  // grid-template-rows: repeat(6, 1fr);
   align-items: center;
+  justify-items: center;
 }

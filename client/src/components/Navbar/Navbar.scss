@@ -2,39 +2,35 @@ $black-primary: #141414;
 $black-secondary: #080808;
 
 .navbar {
-  //   background-image: linear-gradient(to top, $black-primary, $black-secondary);
-  height: 8vw;
-  background-color: white;
+  padding: 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    $black-secondary,
+    $black-primary
+  );
+  // position: fixed;
   display: flex;
+  justify-content: space-between;
 
-  &__links {
-    flex: 1;
+  &__left {
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
+    padding: 1rem;
+  }
 
-    &-item:link,
-    &-item:visited {
-      flex: 1;
-      border: 1px solid $black-secondary;
-      // border-bottom: 1px solid $black-secondary;
-      text-decoration: none;
-      color: #831010;
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      background-color: $black-primary;
+  &__icon {
+    color: #e52213;
+    font-size: 2rem !important;
+    margin-right: 1rem;
+  }
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.7s;
-    }
+  &__title {
+    color: #e52213;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+  }
 
-    &-item:hover,
-    &-item:active {
-      color: white;
-      background-color: $black-secondary;
-    }
+  &__right {
+    padding: 1rem;
   }
 }
