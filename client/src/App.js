@@ -12,25 +12,23 @@ function App() {
   const [active, setActive] = useState("");
 
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Navbar active={active} setActive={setActive} />
-        <div className="main-content">
-          {/* {active === "" && <Home />}
-          {active === "Movielist" && <Movielist />}
-          {active === "Genres" && <Genres />} */}
-          <Switch>
-            <Route exact path="/movielist">
-              <Movielist />
-            </Route>
-            <Route path="/genres">
-              <Genres />
-            </Route>
-          </Switch>
-        </div>
+    <div className="App">
+      <Header />
+      <Navbar active={active} setActive={setActive} />
+      <div className="main-content">
+        {active === "" && <Home />}
+        {active === "Movielist" && <Movielist />}
+        {active === "Genres" && <Genres />}
+        {/* <Switch> */}
+        {/* <Route exact path="/" component={Home} />
+        <Route path="/movielist" component={Movielist} />
+        {/* <Movielist /> */}
+        {/* </Route> */}
+        {/* <Route path="/genres" component={Genres} /> */}
+        {/* <Genres /> */}
+        {/* </Switch> */}
       </div>
-    </Router>
+    </div>
   );
 }
 

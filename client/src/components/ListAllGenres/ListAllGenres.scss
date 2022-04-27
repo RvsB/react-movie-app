@@ -1,0 +1,11 @@
+.genre-list {
+  display: flex;
+  flex-direction: column;
+
+  &__item:link,
+  &__item:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white !important;
+  }
+}

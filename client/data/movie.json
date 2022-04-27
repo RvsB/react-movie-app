@@ -484,5 +484,23 @@
       "imdbRating": 7.8,
       "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SY500_CR0,0,337,500_AL_.jpg"
     }
+  ],
+
+  "genresList": [
+    "Action",
+    "Adventure",
+    "Animation",
+    "Biography",
+    "Comedy",
+    "Crime",
+    "Drama",
+    "Fantasy",
+    "History",
+    "Horror",
+    "Musical",
+    "Romance",
+    "Sci-Fi",
+    "Thriller",
+    "Western"
   ]
 }
