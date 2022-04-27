@@ -1,0 +1,9 @@
+.movie-modal {
+  display: flex;
+
+  &__image {
+    height: 30vw;
+    width: auto;
+    object-fit: contain;
+  }
+}
