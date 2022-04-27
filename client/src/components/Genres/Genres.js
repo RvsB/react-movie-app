@@ -22,8 +22,8 @@ function Genres() {
   // console.log(activeGenre);
 
   return (
-    <div>
-      <h1>This is the list of genres!</h1>
+    <div className="genre-container">
+      {/* <h1>This is the list of genres!</h1> */}
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
       {genreList && (
@@ -35,10 +35,18 @@ function Genres() {
       )}
 
       {/* {activeGenre} */}
-      <div className="movie__list">
-        {movies.map(
-          (movie) =>
-            movie.genres.includes(activeGenre) && <MovieCard movie={movie} />
+      <div className="movie-container">
+        {error1 && <div>{error}</div>}
+        {isPending1 && <div className="loading-content">Loading...</div>}
+        {movies && (
+          <div className="movie__list">
+            {movies.map(
+              (movie) =>
+                movie.genres.includes(activeGenre) && (
+                  <MovieCard movie={movie} />
+                )
+            )}
+          </div>
         )}
       </div>
     </div>

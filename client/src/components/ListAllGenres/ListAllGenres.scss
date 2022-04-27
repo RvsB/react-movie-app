@@ -1,11 +1,15 @@
 .genre-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(3, 3rem);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center;
 
   &__item:link,
   &__item:visited {
     text-decoration: none;
     font-size: 2rem;
-    color: white !important;
+    color: #6e0b0b;
   }
 }
