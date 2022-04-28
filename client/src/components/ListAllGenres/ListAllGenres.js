@@ -5,6 +5,7 @@ function ListAllGenres({ genreList, activeGenre, setActiveGenre }) {
     <div className="genre-list">
       {genreList.map((genre) => (
         <a
+          key={genre.id}
           className="genre-list__item"
           href="#"
           onClick={() => setActiveGenre(genre)}

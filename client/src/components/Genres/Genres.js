@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import ListAllGenres from "../ListAllGenres/ListAllGenres";
+import LoadingSkeleton from "../LoadingSkeleton/LoadingSkeleton";
 import MovieCard from "../MovieCard/MovieCard";
 import "./Genres.scss";
 
@@ -25,7 +26,11 @@ function Genres() {
     <div className="genre-container">
       {/* <h1>This is the list of genres!</h1> */}
       {error && <div>{error}</div>}
-      {isPending && <div>Loading...</div>}
+      {isPending && (
+        <div className="loading">
+          <LoadingSkeleton />
+        </div>
+      )}
       {genreList && (
         <ListAllGenres
           genreList={genreList}

@@ -1,9 +1,36 @@
 .movie-modal {
   display: flex;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
   &__image {
     height: 30vw;
     width: auto;
     object-fit: contain;
   }
+
+  &__details {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--title {
+      margin-bottom: 2rem;
+    }
+
+    & > h4 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.btn-container {
+  align-self: flex-end;
 }
