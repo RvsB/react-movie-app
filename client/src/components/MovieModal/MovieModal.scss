@@ -1,11 +1,14 @@
 .movie-modal {
+  height: 70vh;
+  width: 50vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   &__content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
   }
 
   &__image {
@@ -15,22 +18,27 @@
   }
 
   &__details {
+    // border: 1px solid #831010;
+    // height: 30vw;
+    max-width: 65ch;
     margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     &--title {
       margin-bottom: 2rem;
     }
 
     & > h4 {
+      font-size: 1.1rem;
       margin-bottom: 1rem;
     }
   }
 }
 
 .btn-container {
-  align-self: flex-end;
+  margin-top: 2rem;
+  align-self: center;
 }

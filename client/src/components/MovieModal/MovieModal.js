@@ -9,6 +9,7 @@ import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import UpdateMovieModal from "../UpdateMovieModal/UpdateMovieModal";
+import Stack from "@mui/material/Stack";
 
 const style = {
   position: "absolute",
@@ -65,7 +66,15 @@ function MovieModal() {
       </div>
 
       <div className="btn-container">
-        <button onClick={handleOpen}>Update</button>
+        <Stack direction="row" spacing={2}>
+          <Button onClick={handleOpen} variant="contained" color="error">
+            Update
+          </Button>
+
+          <Button onClick={handleClose} variant="contained" color="error">
+            Close
+          </Button>
+        </Stack>
       </div>
 
       <Modal

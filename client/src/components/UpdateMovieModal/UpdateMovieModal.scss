@@ -23,14 +23,14 @@ $black-primary: #141414;
     padding: 0.5rem;
     margin: 0.5rem 0;
     border: 1px solid #831010;
-    width: 50vw;
-    height: 20vh;
+    min-width: 50vw;
+    min-height: 15vh;
     display: block;
   }
 }
 
-.btn-save {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
+// .btn-save {
+//   position: absolute;
+//   top: 2rem;
+//   right: 2rem;
+// }

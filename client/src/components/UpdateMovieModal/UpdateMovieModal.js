@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { MovieContext } from "../MovieCard/MovieCard";
+import Button from "@mui/material/Button";
 import "./UpdateMovieModal.scss";
 
 const UpdateMovieModal = () => {
@@ -46,8 +47,8 @@ const UpdateMovieModal = () => {
 
   return (
     <div className="update-modal">
-      <h2>Update The Movie</h2>
-      <form onSubmit={handleSubmit}>
+      <h2>Update {title}</h2>
+      <form>
         <label>Movie title:</label>
         <input
           type="text"
@@ -96,11 +97,15 @@ const UpdateMovieModal = () => {
           value={storyline}
           onChange={(e) => setStoryline(e.target.value)}
         ></textarea>
-        {!isPending && <button className="btn-save">Save</button>}
+        {!isPending && (
+          <Button onClick={handleSubmit} variant="contained" color="error">
+            Save
+          </Button>
+        )}
         {isPending && (
-          <button className="btn-save" disabled>
+          <Button variant="outlined" color="error" disabled>
             Saving Movie...
-          </button>
+          </Button>
         )}
       </form>
     </div>
