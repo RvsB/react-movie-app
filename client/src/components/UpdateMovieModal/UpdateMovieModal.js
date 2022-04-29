@@ -41,7 +41,7 @@ const UpdateMovieModal = () => {
       console.log("new movie added");
       setIsPending(false);
       // history.go(-1); this goes back or forward respective to the number we mention, either negative or positive
-      // history.push('/');
+      // history.push('/'); commented this out since react router is not working
     });
   };
 
@@ -53,43 +53,43 @@ const UpdateMovieModal = () => {
         <input
           type="text"
           required
-          value={title} //when the value of title changes it gets reflected here, when we try to change value, onchange gets triggered and it records our input and setTitle to that recorded input and then when we set value={title}, it shows us what we entered in the input field.
-          onChange={(e) => setTitle(e.target.value)} //e is event object
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <label>Content Rating:</label>
         <input
           type="text"
           required
-          value={contentRating} //when the value of title changes it gets reflected here, when we try to change value, onchange gets triggered and it records our input and setTitle to that recorded input and then when we set value={title}, it shows us what we entered in the input field.
-          onChange={(e) => setContentRating(e.target.value)} //e is event object
+          value={contentRating}
+          onChange={(e) => setContentRating(e.target.value)}
         />
         <label>Year:</label>
         <input
           type="text"
           required
-          value={year} //when the value of title changes it gets reflected here, when we try to change value, onchange gets triggered and it records our input and setTitle to that recorded input and then when we set value={title}, it shows us what we entered in the input field.
-          onChange={(e) => setYear(e.target.value)} //e is event object
+          value={year}
+          onChange={(e) => setYear(e.target.value)}
         />
         <label>Genres:</label>
         <input
           type="text"
           required
-          value={genres} //when the value of title changes it gets reflected here, when we try to change value, onchange gets triggered and it records our input and setTitle to that recorded input and then when we set value={title}, it shows us what we entered in the input field.
-          onChange={(e) => setGenres(e.target.value)} //e is event object
+          value={genres}
+          onChange={(e) => setGenres(e.target.value)}
         />
         <label>IMDB Rating:</label>
         <input
           type="text"
           required
-          value={imdbRating} //when the value of title changes it gets reflected here, when we try to change value, onchange gets triggered and it records our input and setTitle to that recorded input and then when we set value={title}, it shows us what we entered in the input field.
-          onChange={(e) => setImdbRating(e.target.value)} //e is event object
+          value={imdbRating}
+          onChange={(e) => setImdbRating(e.target.value)}
         />
         <label>Actors:</label>
         <input
           type="text"
           required
-          value={actors} //when the value of title changes it gets reflected here, when we try to change value, onchange gets triggered and it records our input and setTitle to that recorded input and then when we set value={title}, it shows us what we entered in the input field.
-          onChange={(e) => setActors(e.target.value)} //e is event object
+          value={actors}
+          onChange={(e) => setActors(e.target.value)}
         />
         <label>Storyline:</label>
         <textarea

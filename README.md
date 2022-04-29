@@ -9,7 +9,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -32,36 +31,31 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
+## About The Project
 
 MovieFlix is an app which provides you with information of various movies and has a special feature to sort movies out based on their Genres.
 
 Features:
-* The database is hoted on a JSON Server
-* You can filter movies based on their Genre
-* You can update movie data too
 
+- The database is hoted on a JSON Server
+- You can filter movies based on their Genre
+- You can update movie data too
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* [React.js](https://reactjs.org/)
-* [Sass](https://sass-lang.com/)
-* [Material UI](https://mui.com/)
-* [JSON Server](https://www.npmjs.com/package/json-server)
+- [React.js](https://reactjs.org/)
+- [Sass](https://sass-lang.com/)
+- [Material UI](https://mui.com/)
+- [JSON Server](https://www.npmjs.com/package/json-server)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ### Prerequisites
@@ -91,8 +85,14 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- REMARKS -->
+
+## Remarks
+
+The part with the usage of `React Router` in the `App` component was commented out because, there was some problem with React Router in my machine, I checked everything but there weren't any bugs either, will try to ake it work but for now, i had to go with conditional rendering of the router related components.
 
 <!-- CONTACT -->
+
 ## Contact
 
 Raj Vardhan Singh Birani - rbrajvardhan@gmail.com
