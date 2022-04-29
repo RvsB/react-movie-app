@@ -23,11 +23,12 @@ function App() {
           {active === "Genres" && <Genres />}
 
           {/* <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/movielist" component={Movielist} />
-          {/* <Route exact path="/genres" component={Genres} /> 
-              <Route path="*" component={NotFound} />*/}
-          {/* </Switch> */}
+            <Redirect exact from="/" to="/myapp"/>
+            <Route exact path="/myapp" component={Home} />
+            <Route path="/myapp/movielist" component={Movielist} />
+            <Route path="/myapp/genres" component={Genres} /> 
+            <Route path="*" component={NotFound} />
+          </Switch> */}
         </div>
       </div>
     </Router>

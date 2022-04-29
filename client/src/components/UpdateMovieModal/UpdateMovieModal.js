@@ -2,9 +2,10 @@ import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { MovieContext } from "../MovieCard/MovieCard";
 import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 import "./UpdateMovieModal.scss";
 
-const UpdateMovieModal = () => {
+const UpdateMovieModal = ({ saveHandleClose }) => {
   const movie = useContext(MovieContext);
 
   const [title, setTitle] = useState(movie.title);
@@ -97,16 +98,21 @@ const UpdateMovieModal = () => {
           value={storyline}
           onChange={(e) => setStoryline(e.target.value)}
         ></textarea>
-        {!isPending && (
-          <Button onClick={handleSubmit} variant="contained" color="error">
-            Save
+        <Stack direction="row" spacing={2}>
+          {!isPending && (
+            <Button onClick={handleSubmit} variant="contained" color="error">
+              Save
+            </Button>
+          )}
+          {isPending && (
+            <Button variant="outlined" color="error" disabled>
+              Saving Movie...
+            </Button>
+          )}
+          <Button onClick={saveHandleClose} variant="contained" color="error">
+            Close
           </Button>
-        )}
-        {isPending && (
-          <Button variant="outlined" color="error" disabled>
-            Saving Movie...
-          </Button>
-        )}
+        </Stack>
       </form>
     </div>
   );
