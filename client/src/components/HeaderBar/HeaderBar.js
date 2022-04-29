@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./HeaderBar.scss";
 
-function HeaderBar({ active, setActive }) {
+function HeaderBar({ setActive }) {
   return (
     <nav className="header-bar">
       <div className="header-bar__links">

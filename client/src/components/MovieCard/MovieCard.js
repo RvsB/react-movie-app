@@ -86,7 +86,7 @@ export default function MovieCard({ movie }) {
               >
                 Text in a modal
               </Typography> */}
-              <MovieModal />
+              <MovieModal parentHandleClose={handleClose} />
               {/* <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
               </Typography> */}

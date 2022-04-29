@@ -26,7 +26,7 @@ const style = {
   p: 4,
 };
 
-function MovieModal() {
+function MovieModal({ parentHandleClose }) {
   const movie = useContext(MovieContext);
 
   const [open, setOpen] = React.useState(false);
@@ -71,7 +71,7 @@ function MovieModal() {
             Update
           </Button>
 
-          <Button onClick={handleClose} variant="contained" color="error">
+          <Button onClick={parentHandleClose} variant="contained" color="error">
             Close
           </Button>
         </Stack>

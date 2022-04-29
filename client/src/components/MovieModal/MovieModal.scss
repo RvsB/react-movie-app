@@ -1,13 +1,13 @@
 .movie-modal {
   height: 70vh;
-  width: 50vw;
+  // width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   &__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
   }
 
