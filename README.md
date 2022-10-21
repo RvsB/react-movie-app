@@ -64,8 +64,6 @@ Clone the repository and .
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
 1. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
@@ -91,7 +89,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. The part with the usage of `React Router` in the `App` component was commented out because, there was some problem with React Router in my machine, I checked everything but there weren't any bugs either, will try to ake it work but for now, i had to go with conditional rendering of the router related components.
 
-2. All the backend code in in the `api` directory and all the frontend code is in the `client` directory. The backend part is still under developement.
+2. All the backend code is in the `api` directory and all the frontend code is in the `client` directory. The backend part is still under developement.
 
 <!-- CONTACT -->
 
